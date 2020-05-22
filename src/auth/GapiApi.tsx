@@ -1,3 +1,5 @@
+import emailList from "../emailList";
+
 declare var gapi : any;
 
 export default class GapiApi {
@@ -9,13 +11,32 @@ export default class GapiApi {
   
   public static readonly shared = new GapiApi('213328197517-079p7u328erbifqllrsimnhi3phsdos9');
 
-  async signIn(cb){
+  async signIn(cb, removeCookie, removeGoogleAuthCookie){
     await gapi.load('auth2', async () => {
-      console.log("sign in");
       const auth2 = gapi.auth2.init({client_id: this._clientId});
+      let email;
       await auth2.signIn();
-      cb();
+      if (auth2.isSignedIn) {
+        var profile = auth2.currentUser.get().getBasicProfile();
+        email = profile.getEmail();
+      }
+      if(this.validateEmail(email)){
+        cb();
+      }
+      else{
+        removeCookie();
+        removeGoogleAuthCookie();
+        this.signOut(removeCookie);
+      }
     });
+  }
+
+  validateEmail(email){
+    if(!emailList.includes(email)){
+      alert('Sorry! Not a valid email address!');
+      return false;
+    }
+    return true;
   }
 
   signOut(cb){
@@ -24,9 +45,11 @@ export default class GapiApi {
       if(!auth2){
         auth2 = gapi.auth2.init({client_id: this._clientId});
       }
+      cb();
       return auth2.signOut().then( () => {
+        console.log('disconnecting');
         auth2.disconnect();
-        cb();
+        auth2 = null;
       });
     });
   }

@@ -1,15 +1,18 @@
 import createReducer from './create-reducer';
 
 interface S {
-  assets: any[];
+  step: string;
 }
 
 const initialState = {
-  assets: [],
+  step: 'introduction',
 };
 
 const handlers = {
-  
+  SET_STEP: (state, {step}) => ({
+    ...state,
+    step,
+  })
 };
 
 export default createReducer(initialState, handlers);

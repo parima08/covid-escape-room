@@ -4,6 +4,7 @@ import { useCookies } from 'react-cookie';
 import { Switch } from 'react-router';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './home';
+import Clue1 from './clues/clue1';
 
 
 const App: React.FC = () => {
@@ -16,7 +17,6 @@ const App: React.FC = () => {
     <Router>
       <Switch>
         <Route 
-          exact={true}
           path="/"
           component={Home}
         />

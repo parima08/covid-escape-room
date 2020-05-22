@@ -1,41 +1,29 @@
 import React from 'react';
 //import { createUseStyles } from 'react-jss';
-import GapiApi from '../auth/GapiApi';
-import { useCookies } from 'react-cookie';
 
-import logo from '../logo.svg';
+import Step from './step';
+import { Switch } from 'react-router';
+import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
+import Introduction from './introduction';
 
-
-
-export default function Home() {
-  const [cookies, _, removeCookie] = useCookies(['login']);
-
-  const handleSignOut = () => {
-    const cb = () => removeCookie('login');
-    GapiApi.shared.signOut(cb);
-}
-
+export default function Home({ match, location }) {
+  console.log('match', match);
   return (
     <>
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Parima's App - does this work?asdf
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-        <button onClick={handleSignOut}>
-          Log out
-        </button>
-      </div>
+      <Router>
+        <Switch>
+          <Route 
+            exact={true}
+            path={`/`}
+            component={Step}
+          />
+          <Route 
+            exact={true}
+            path={`/:step`}
+            component={Step}
+          />
+        </Switch>
+      </Router>
     </>
   );
 }
