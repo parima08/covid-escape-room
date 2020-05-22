@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/design-studio/static/css/main.eb364759.chunk.css",
+    "main.js": "/design-studio/static/js/main.233da92b.chunk.js",
+    "main.js.map": "/design-studio/static/js/main.233da92b.chunk.js.map",
+    "runtime-main.js": "/design-studio/static/js/runtime-main.a41b4cf2.js",
+    "runtime-main.js.map": "/design-studio/static/js/runtime-main.a41b4cf2.js.map",
+    "static/js/2.eb66816f.chunk.js": "/design-studio/static/js/2.eb66816f.chunk.js",
+    "static/js/2.eb66816f.chunk.js.map": "/design-studio/static/js/2.eb66816f.chunk.js.map",
+    "index.html": "/design-studio/index.html",
+    "precache-manifest.3b31b00f44e3599177f3ad6a06caba42.js": "/design-studio/precache-manifest.3b31b00f44e3599177f3ad6a06caba42.js",
+    "service-worker.js": "/design-studio/service-worker.js",
+    "static/css/main.eb364759.chunk.css.map": "/design-studio/static/css/main.eb364759.chunk.css.map",
+    "static/media/clue1.png": "/design-studio/static/media/clue1.01a77219.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a41b4cf2.js",
+    "static/js/2.eb66816f.chunk.js",
+    "static/css/main.eb364759.chunk.css",
+    "static/js/main.233da92b.chunk.js"
+  ]
+}
