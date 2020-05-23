@@ -372,6 +372,28 @@ section {
   color: white;
   width: 15%; }
 
+.password-input {
+  line-height: 100px;
+  font-size: 80px;
+  background-color: transparent;
+  border: none;
+  outline: 0;
+  color: white;
+  word-spacing: 0px;
+  overflow: hidden;
+  text-align: center;
+  width: 60px;
+  margin: 10px;
+}
+
+.password-container {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
   @media only screen and (max-width: 770px) {
     .nav--desktop {

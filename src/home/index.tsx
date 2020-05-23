@@ -7,7 +7,6 @@ import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 import Introduction from './introduction';
 
 export default function Home({ match, location }) {
-  console.log('match', match);
   return (
     <>
       <Router>
@@ -20,6 +19,10 @@ export default function Home({ match, location }) {
           <Route 
             exact={true}
             path={`/:step`}
+            component={Step}
+          />
+          <Route 
+            path={`/:domain/:step`}
             component={Step}
           />
         </Switch>

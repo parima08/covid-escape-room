@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/design-studio/static/css/main.eb364759.chunk.css",
-    "main.js": "/design-studio/static/js/main.233da92b.chunk.js",
-    "main.js.map": "/design-studio/static/js/main.233da92b.chunk.js.map",
-    "runtime-main.js": "/design-studio/static/js/runtime-main.a41b4cf2.js",
-    "runtime-main.js.map": "/design-studio/static/js/runtime-main.a41b4cf2.js.map",
-    "static/js/2.eb66816f.chunk.js": "/design-studio/static/js/2.eb66816f.chunk.js",
-    "static/js/2.eb66816f.chunk.js.map": "/design-studio/static/js/2.eb66816f.chunk.js.map",
-    "index.html": "/design-studio/index.html",
-    "precache-manifest.3b31b00f44e3599177f3ad6a06caba42.js": "/design-studio/precache-manifest.3b31b00f44e3599177f3ad6a06caba42.js",
-    "service-worker.js": "/design-studio/service-worker.js",
-    "static/css/main.eb364759.chunk.css.map": "/design-studio/static/css/main.eb364759.chunk.css.map",
-    "static/media/clue1.png": "/design-studio/static/media/clue1.01a77219.png"
+    "main.css": "/covid-escape-room/static/css/main.746c1a0b.chunk.css",
+    "main.js": "/covid-escape-room/static/js/main.2bcc3d32.chunk.js",
+    "main.js.map": "/covid-escape-room/static/js/main.2bcc3d32.chunk.js.map",
+    "runtime-main.js": "/covid-escape-room/static/js/runtime-main.d5730742.js",
+    "runtime-main.js.map": "/covid-escape-room/static/js/runtime-main.d5730742.js.map",
+    "static/js/2.715caa00.chunk.js": "/covid-escape-room/static/js/2.715caa00.chunk.js",
+    "static/js/2.715caa00.chunk.js.map": "/covid-escape-room/static/js/2.715caa00.chunk.js.map",
+    "index.html": "/covid-escape-room/index.html",
+    "precache-manifest.8b31d29ca9d0823db527eda648ec69ce.js": "/covid-escape-room/precache-manifest.8b31d29ca9d0823db527eda648ec69ce.js",
+    "service-worker.js": "/covid-escape-room/service-worker.js",
+    "static/css/main.746c1a0b.chunk.css.map": "/covid-escape-room/static/css/main.746c1a0b.chunk.css.map",
+    "static/media/clue1.png": "/covid-escape-room/static/media/clue1.01a77219.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.a41b4cf2.js",
-    "static/js/2.eb66816f.chunk.js",
-    "static/css/main.eb364759.chunk.css",
-    "static/js/main.233da92b.chunk.js"
+    "static/js/runtime-main.d5730742.js",
+    "static/js/2.715caa00.chunk.js",
+    "static/css/main.746c1a0b.chunk.css",
+    "static/js/main.2bcc3d32.chunk.js"
   ]
 }

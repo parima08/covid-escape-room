@@ -12,7 +12,7 @@ export default function Step({
   match
 }: any) {
 
-  console.log('match', match);
+  console.log('step', match);
 
   const renderStep = (step) => {
     switch(step){

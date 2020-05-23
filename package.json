@@ -1,8 +1,8 @@
 {
-  "name": "design-studio",
+  "name": "covid-escape-room",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://parima08.github.io/design-studio",
+  "homepage": "https://parima08.github.io/covid-escape-room",
   "dependencies": {
     "@types/jest": "24.0.18",
     "@types/node": "12.7.12",
