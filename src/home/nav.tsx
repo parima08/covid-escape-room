@@ -1,21 +1,55 @@
 import React from 'react';
+import {useSelector } from 'react-redux';
+import { useHistory } from 'react-router-dom';
 import { setStep } from '../redux/actions';
+import { setLastSolvedClueSelector } from '../redux/selectors';
+import mountLockedModal from '../components/mountLockedWarning';
+import { useCookies } from 'react-cookie';
 interface NavProps {}
 
 export default function Nav() {
+  const CLUES = 10; 
+  const clueIndexes = Array.from(Array(CLUES).keys());
+  const [cookies, setCookie, removeCookie] = useCookies(['lastSolvedClue']);
+  const lastSolvedClue = cookies['lastSolvedClue'];// || useSelector(setLastSolvedClueSelector);
+  console.log('lastSolvedClue', lastSolvedClue);
+  const lockIcon = (<img src={require("../img/icons/lock.svg")}/>);
+  const unlockIcon = (<img src={require("../img/icons/unlock.svg")}/>);
+  const { history } = useHistory();
+
+  
+  const isUnlocked = (num) => num <= lastSolvedClue;
+
+  const handleClick = (e, index) => {
+    if(!isUnlocked(index)){
+      mountLockedModal({});
+    }
+    // else{
+    //   //history.push(`/clue${index}`);
+    // }
+  }
   return (
     <nav className="nav">
       <a href='/introduction'>Introduction</a>
-      <a href='/clue1'>Clue 1</a>
-      <a>Clue 2</a>
-      <a>Clue 3</a>
-      <a>Clue 4</a>
-      <a>Clue 5</a>
-      <a>Clue 6</a>
-      <a>Clue 7</a>
-      <a>Clue 8</a>
-      <a>Clue 9</a>
-      <a>Clue 10</a>
+      {
+        clueIndexes.map( (num) => {
+          const index = num + 1;
+         const icon = isUnlocked(index) ? 
+          unlockIcon :
+          lockIcon; 
+        const link = isUnlocked(index) ? 
+          `/clue${index}` : 
+          '';
+         return( 
+          <a key={`clue${num}`} href={link} className='nav-link-container' onClick={e => handleClick(e, index)}>
+           <div className="nav-icon">
+              {icon}
+           </div>
+           Clue {index}
+          </a>
+        )
+        }) 
+      }
     </nav>
   );
 }

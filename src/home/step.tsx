@@ -1,5 +1,8 @@
 import React from 'react';
 import Clue1 from '../clues/clue1';
+import Clue2 from '../clues/clue2';
+import Clue3 from '../clues/clue3';
+
 import Nav from './nav';
 import Introduction from './introduction';
 import { useSelector } from 'react-redux';
@@ -21,9 +24,9 @@ export default function Step({
       case 'clue1':
         return <Clue1 />;
       case 'clue2':
-        break;
+        return <Clue2 />
       case 'clue3':
-        break;
+        return <Clue3 />
       case 'clue4':
         break;
       case 'clue5':
@@ -47,7 +50,10 @@ export default function Step({
   const step = useSelector(stepSelector);
   console.log(step);
   const handleSignOut = () => {
-    const cb = () => removeCookie('login');
+    const cb = () => {
+      removeCookie('login');
+      removeCookie('lastSolvedClue');
+    }
     GapiApi.shared.signOut(cb);
   }
 

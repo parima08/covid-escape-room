@@ -1,19 +1,26 @@
 import React from 'react';
+import PasswordChecker from '../home/PasswordChecker';
+import { solutions } from './solutions';
 
 interface Step2Props {}
 
-export default function Step2({
+export default function Clue2({
 }: Step2Props) {
-
+  const STEP = 2;
   return (
     <section>
-      <h1 className="font-fjalla">Orientation and Induction</h1>
+      <h1 className="font-fjalla">Clue 2</h1>
       <p>
-        The Defense Lab welcomes you to the orientation and induction session just as you begin your secret mission.
-        Safety procols must be followed strictly during the mission. Solve the below mesage and find the answer. 
-        You will need to use the object in teh answer correctly before stepping in the portal machine.
+        Beofre you go ahead, your posture and vission will be assesed by the medical officer
+        using ths below sketch.
       </p>
-      <img src={require("../img/clue1/clue1.png")} alt='clue1' />
+      <p>
+        Hint: esolc eno eye, tlit ruoy enohp dna kool ta siht morf eht s'enohp regrahc eloh
+      </p>
+      <img src={require("../img/clue2/clue2.png")} alt='clue2' />
+      <div className='password-container'>
+        <PasswordChecker solution={solutions[STEP]} step={STEP}/>
+      </div>
     </section>
   );
 }
