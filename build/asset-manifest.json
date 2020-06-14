@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/covid-escape-room/static/css/main.ef249ed7.chunk.css",
-    "main.js": "/covid-escape-room/static/js/main.4e0c47ee.chunk.js",
-    "main.js.map": "/covid-escape-room/static/js/main.4e0c47ee.chunk.js.map",
+    "main.css": "/covid-escape-room/static/css/main.9f4396ee.chunk.css",
+    "main.js": "/covid-escape-room/static/js/main.660639b0.chunk.js",
+    "main.js.map": "/covid-escape-room/static/js/main.660639b0.chunk.js.map",
     "runtime-main.js": "/covid-escape-room/static/js/runtime-main.d5730742.js",
     "runtime-main.js.map": "/covid-escape-room/static/js/runtime-main.d5730742.js.map",
-    "static/js/2.715caa00.chunk.js": "/covid-escape-room/static/js/2.715caa00.chunk.js",
-    "static/js/2.715caa00.chunk.js.map": "/covid-escape-room/static/js/2.715caa00.chunk.js.map",
+    "static/js/2.78d279a9.chunk.js": "/covid-escape-room/static/js/2.78d279a9.chunk.js",
+    "static/js/2.78d279a9.chunk.js.map": "/covid-escape-room/static/js/2.78d279a9.chunk.js.map",
     "index.html": "/covid-escape-room/index.html",
-    "precache-manifest.636f3cac9abb0eda31173950e85bce33.js": "/covid-escape-room/precache-manifest.636f3cac9abb0eda31173950e85bce33.js",
+    "precache-manifest.026a4859232d1c253b1e78da045d7b48.js": "/covid-escape-room/precache-manifest.026a4859232d1c253b1e78da045d7b48.js",
     "service-worker.js": "/covid-escape-room/service-worker.js",
-    "static/css/main.ef249ed7.chunk.css.map": "/covid-escape-room/static/css/main.ef249ed7.chunk.css.map",
-    "static/media/clue1.png": "/covid-escape-room/static/media/clue1.01a77219.png"
+    "static/css/main.9f4396ee.chunk.css.map": "/covid-escape-room/static/css/main.9f4396ee.chunk.css.map",
+    "static/media/clue1.png": "/covid-escape-room/static/media/clue1.01a77219.png",
+    "static/media/clue2.png": "/covid-escape-room/static/media/clue2.56a953b5.png",
+    "static/media/lock.svg": "/covid-escape-room/static/media/lock.913c3b7c.svg",
+    "static/media/unlock.svg": "/covid-escape-room/static/media/unlock.83ea30b0.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.d5730742.js",
-    "static/js/2.715caa00.chunk.js",
-    "static/css/main.ef249ed7.chunk.css",
-    "static/js/main.4e0c47ee.chunk.js"
+    "static/js/2.78d279a9.chunk.js",
+    "static/css/main.9f4396ee.chunk.css",
+    "static/js/main.660639b0.chunk.js"
   ]
 }
