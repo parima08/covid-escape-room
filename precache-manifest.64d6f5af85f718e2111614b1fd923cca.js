@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a31547c0ef3345fd326f8c0ba8d5cac3",
+    "revision": "834a673fc303efabc556ea8f37a452a4",
     "url": "/covid-escape-room/index.html"
   },
   {
-    "revision": "f1caeb9829e900263a56",
+    "revision": "110419d4f827f1327cf4",
     "url": "/covid-escape-room/static/css/main.d1803a02.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/covid-escape-room/static/js/2.fd98d900.chunk.js"
   },
   {
-    "revision": "f1caeb9829e900263a56",
-    "url": "/covid-escape-room/static/js/main.0032edfd.chunk.js"
+    "revision": "110419d4f827f1327cf4",
+    "url": "/covid-escape-room/static/js/main.01d94c79.chunk.js"
   },
   {
     "revision": "88b833fe4ffc9f583e43",
