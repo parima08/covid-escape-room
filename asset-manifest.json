@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/covid-escape-room/static/css/main.d1803a02.chunk.css",
-    "main.js": "/covid-escape-room/static/js/main.6b6b478f.chunk.js",
-    "main.js.map": "/covid-escape-room/static/js/main.6b6b478f.chunk.js.map",
+    "main.js": "/covid-escape-room/static/js/main.efc3eaab.chunk.js",
+    "main.js.map": "/covid-escape-room/static/js/main.efc3eaab.chunk.js.map",
     "runtime-main.js": "/covid-escape-room/static/js/runtime-main.d5730742.js",
     "runtime-main.js.map": "/covid-escape-room/static/js/runtime-main.d5730742.js.map",
     "static/js/2.fd98d900.chunk.js": "/covid-escape-room/static/js/2.fd98d900.chunk.js",
     "static/js/2.fd98d900.chunk.js.map": "/covid-escape-room/static/js/2.fd98d900.chunk.js.map",
     "index.html": "/covid-escape-room/index.html",
-    "precache-manifest.037178d0c11afb0dae8ed00a3be54ac5.js": "/covid-escape-room/precache-manifest.037178d0c11afb0dae8ed00a3be54ac5.js",
+    "precache-manifest.61315b9eddf70538a1698c126c207c92.js": "/covid-escape-room/precache-manifest.61315b9eddf70538a1698c126c207c92.js",
     "service-worker.js": "/covid-escape-room/service-worker.js",
     "static/css/main.d1803a02.chunk.css.map": "/covid-escape-room/static/css/main.d1803a02.chunk.css.map",
     "static/media/clue1.png": "/covid-escape-room/static/media/clue1.01a77219.png",
@@ -33,6 +33,6 @@
     "static/js/runtime-main.d5730742.js",
     "static/js/2.fd98d900.chunk.js",
     "static/css/main.d1803a02.chunk.css",
-    "static/js/main.6b6b478f.chunk.js"
+    "static/js/main.efc3eaab.chunk.js"
   ]
 }

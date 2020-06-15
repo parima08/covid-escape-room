@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/covid-escape-room/precache-manifest.037178d0c11afb0dae8ed00a3be54ac5.js"
+  "/covid-escape-room/precache-manifest.61315b9eddf70538a1698c126c207c92.js"
 );
 
 self.addEventListener('message', (event) => {
