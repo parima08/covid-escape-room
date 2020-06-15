@@ -1,25 +1,38 @@
 {
   "files": {
-    "main.css": "/covid-escape-room/static/css/main.9f4396ee.chunk.css",
-    "main.js": "/covid-escape-room/static/js/main.660639b0.chunk.js",
-    "main.js.map": "/covid-escape-room/static/js/main.660639b0.chunk.js.map",
+    "main.css": "/covid-escape-room/static/css/main.d1803a02.chunk.css",
+    "main.js": "/covid-escape-room/static/js/main.0032edfd.chunk.js",
+    "main.js.map": "/covid-escape-room/static/js/main.0032edfd.chunk.js.map",
     "runtime-main.js": "/covid-escape-room/static/js/runtime-main.d5730742.js",
     "runtime-main.js.map": "/covid-escape-room/static/js/runtime-main.d5730742.js.map",
-    "static/js/2.78d279a9.chunk.js": "/covid-escape-room/static/js/2.78d279a9.chunk.js",
-    "static/js/2.78d279a9.chunk.js.map": "/covid-escape-room/static/js/2.78d279a9.chunk.js.map",
+    "static/js/2.fd98d900.chunk.js": "/covid-escape-room/static/js/2.fd98d900.chunk.js",
+    "static/js/2.fd98d900.chunk.js.map": "/covid-escape-room/static/js/2.fd98d900.chunk.js.map",
     "index.html": "/covid-escape-room/index.html",
-    "precache-manifest.026a4859232d1c253b1e78da045d7b48.js": "/covid-escape-room/precache-manifest.026a4859232d1c253b1e78da045d7b48.js",
+    "precache-manifest.56ab8b0103d20ded02b71d888af2d878.js": "/covid-escape-room/precache-manifest.56ab8b0103d20ded02b71d888af2d878.js",
     "service-worker.js": "/covid-escape-room/service-worker.js",
-    "static/css/main.9f4396ee.chunk.css.map": "/covid-escape-room/static/css/main.9f4396ee.chunk.css.map",
+    "static/css/main.d1803a02.chunk.css.map": "/covid-escape-room/static/css/main.d1803a02.chunk.css.map",
     "static/media/clue1.png": "/covid-escape-room/static/media/clue1.01a77219.png",
+    "static/media/clue10.png": "/covid-escape-room/static/media/clue10.3d9fce28.png",
     "static/media/clue2.png": "/covid-escape-room/static/media/clue2.56a953b5.png",
+    "static/media/clue3.png": "/covid-escape-room/static/media/clue3.95368a69.png",
+    "static/media/clue4.mp3": "/covid-escape-room/static/media/clue4.182529b1.mp3",
+    "static/media/clue5-1.png": "/covid-escape-room/static/media/clue5-1.9ee59afc.png",
+    "static/media/clue5-2.png": "/covid-escape-room/static/media/clue5-2.1a94a9dd.png",
+    "static/media/clue5-3.png": "/covid-escape-room/static/media/clue5-3.520553bf.png",
+    "static/media/clue6.png": "/covid-escape-room/static/media/clue6.8f0186a5.png",
+    "static/media/clue7.png": "/covid-escape-room/static/media/clue7.a7de14c6.png",
+    "static/media/clue8-video.mp4": "/covid-escape-room/static/media/clue8-video.6aa84460.mp4",
+    "static/media/clue8.png": "/covid-escape-room/static/media/clue8.483df9f6.png",
+    "static/media/clue9-1.png": "/covid-escape-room/static/media/clue9-1.49b59b8a.png",
+    "static/media/clue9-2.png": "/covid-escape-room/static/media/clue9-2.6511444f.png",
+    "static/media/clue9-3.png": "/covid-escape-room/static/media/clue9-3.7a37515e.png",
     "static/media/lock.svg": "/covid-escape-room/static/media/lock.913c3b7c.svg",
     "static/media/unlock.svg": "/covid-escape-room/static/media/unlock.83ea30b0.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.d5730742.js",
-    "static/js/2.78d279a9.chunk.js",
-    "static/css/main.9f4396ee.chunk.css",
-    "static/js/main.660639b0.chunk.js"
+    "static/js/2.fd98d900.chunk.js",
+    "static/css/main.d1803a02.chunk.css",
+    "static/js/main.0032edfd.chunk.js"
   ]
 }

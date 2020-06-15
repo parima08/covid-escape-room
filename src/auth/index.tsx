@@ -10,7 +10,7 @@ export default function Auth(){
   async function handleSignIn(){
       const cb = () => {
         setCookie('login', true, {path: '/'});
-        setCookie('lastSolvedClue', 1);
+        setCookie('lastSolvedClue', 1, {path: '/'});
       }
       GapiApi.shared.signIn(cb, removeCookie, removeGoogleAuthCookie);
   }

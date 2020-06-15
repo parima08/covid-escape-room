@@ -10,7 +10,7 @@ export default function Clue2({
   return (
     <section>
       <h1 className="font-fjalla">Clue 2</h1>
-      <p>
+      <p className="clue-text">
         Beofre you go ahead, your posture and vission will be assesed by the medical officer
         using ths below sketch.
       </p>

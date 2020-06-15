@@ -9,6 +9,13 @@ import { useSelector } from 'react-redux';
 import { stepSelector } from '../redux/selectors';
 import GapiApi from '../auth/GapiApi';
 import { useCookies } from 'react-cookie';
+import Clue4 from '../clues/clue4';
+import Clue5 from '../clues/clue5';
+import Clue6 from '../clues/clue6';
+import Clue7 from '../clues/clue7';
+import Clue8 from '../clues/clue8';
+import Clue9 from '../clues/clue9';
+import Clue10 from '../clues/clue10';
 
 
 export default function Step({
@@ -28,19 +35,19 @@ export default function Step({
       case 'clue3':
         return <Clue3 />
       case 'clue4':
-        break;
+        return <Clue4 />;
       case 'clue5':
-        break;
+        return <Clue5 />;
       case 'clue6':
-        break;
+        return <Clue6 />;
       case 'clue7':
-        break;
+        return <Clue7 />;
       case 'clue8':
-        break;
+        return <Clue8 />;
       case 'clue9':
-        break;
+        return <Clue9 />;
       case 'clue10':
-        break;
+        return <Clue10 />;;
       default: 
         return <Introduction />;
     }
@@ -51,9 +58,11 @@ export default function Step({
   console.log(step);
   const handleSignOut = () => {
     const cb = () => {
-      removeCookie('login');
-      removeCookie('lastSolvedClue');
+      removeCookie('login', { path: '/' });
+      removeCookie('lastSolvedClue', { path: '/' });
     }
+    removeCookie('login', { path: '/' })
+    removeCookie('lastSolvedClue', { path: '/' });
     GapiApi.shared.signOut(cb);
   }
 

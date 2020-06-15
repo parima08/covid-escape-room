@@ -1,6 +1,9 @@
 import React from 'react';
-import { setStep } from '../redux/actions';
+import { Link } from "react-router-dom";
+
+
 interface IntroductionProps {}
+
 
 export default function Introduction({
 }: IntroductionProps) {
@@ -13,9 +16,9 @@ export default function Introduction({
         <p>
           This escape room is used to raise funds for SR Love and Care.
         </p>
-        <a className='font-fjalla' href='/clue1'>
+        <Link className='font-fjalla' to='/clue1'>
           Go to Clue 1 ->
-        </a>
+        </Link>
       </div>
     </section>
   );

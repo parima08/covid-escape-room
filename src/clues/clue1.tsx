@@ -10,7 +10,7 @@ export default function Clue1({
   return (
     <section>
       <h1 className="font-fjalla">Orientation and Induction</h1>
-      <p>
+      <p className="clue-text">
         The Defense Lab welcomes you to the orientation and induction session just as you begin your secret mission.
         Safety procols must be followed strictly during the mission. Solve the below mesage and find the answer. 
         You will need to use the object in the answer correctly before stepping in the portal machine.

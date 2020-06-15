@@ -3,18 +3,24 @@ import React from 'react';
 
 import Step from './step';
 import { Switch } from 'react-router';
-import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
+import { HashRouter as Router, Route, Redirect } from 'react-router-dom';
 import Introduction from './introduction';
+import Success from '../clues/success';
 
 export default function Home({ match, location }) {
   return (
     <>
-      <Router>
+      <Router  basename="/">
         <Switch>
           <Route 
             exact={true}
             path={`/`}
             component={Step}
+          />
+          <Route 
+            exact={true}
+            path={`/success`}
+            component={Success}
           />
           <Route 
             exact={true}

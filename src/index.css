@@ -403,16 +403,25 @@ section {
   outline: 0;
   color: white;
   word-spacing: 0px;
-  overflow: hidden;
   text-align: center;
-  width: 60px;
+  width: 68px;
   margin: 10px;
+}
+
+.spacer{
+  width: 100px;
 }
 
 .password-container {
   padding: 20px;
   width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.password-container form {
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -543,6 +552,30 @@ section {
   transform: translateX(-50%);
 }
 
+.modal-button {
+  color: black;
+}
+
+.clue-text{
+  font-weight: 500;
+  padding: 10px 0 40px 0;
+}
+
+.unlock-button{
+  background: #c0b2fc;
+  border-radius: 8px;
+  padding: 20px;
+}
+.clue5-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.clue5-img{
+  width: 30%;
+  padding: 20px;
+}
 
   @media only screen and (max-width: 770px) {
     .nav--desktop {

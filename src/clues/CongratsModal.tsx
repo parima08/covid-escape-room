@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Modal, { ModalProps } from '../components/Modal';
+import Modal from '../components/Modal';
+import { Link } from "react-router-dom";
+
 export interface CongratsModalProps {
     onClose: () => void;
     step?: number;
@@ -11,7 +13,7 @@ export default function CongratsModal({
 }: CongratsModalProps) {
 
     const [padlockClasses, setPadlockClasses] = useState("padlock");
-
+    const success = ( (step || 0) + 1 > 10);
     useEffect( () => {
         setTimeout( () => {
             setPadlockClasses("padlock unlock");
@@ -32,9 +34,16 @@ export default function CongratsModal({
                 </div>
                 <h1>Congrats!</h1>
                 <p>You've made it past this level.</p>
-                <a href={`/clue${(step || 0)+1}`} className="modalButton">
-                    Go on to the next clue
-                </a>
+                { !success && (
+                    <Link to={`/clue${(step || 0)+1}`} className="modal-button">
+                        Go on to the next clue
+                    </Link>
+                    )
+                }
+                {success && <Link to={`/success`} className="modal-button">
+                    Go on to see how you've impacted the world
+                    </Link>
+                }
             </div>
         </Modal>
     );

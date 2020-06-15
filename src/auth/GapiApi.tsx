@@ -8,8 +8,10 @@ export default class GapiApi {
   constructor(clientId) {
     this._clientId = clientId;
   }
-  
-  public static readonly shared = new GapiApi('213328197517-079p7u328erbifqllrsimnhi3phsdos9');
+
+  //213328197517-9ufecuearqg6f1tve7q5s18undbutsg0.apps.googleusercontent.com
+  //'213328197517-079p7u328erbifqllrsimnhi3phsdos9'
+  public static readonly shared = new GapiApi('213328197517-9ufecuearqg6f1tve7q5s18undbutsg0');
 
   async signIn(cb, removeCookie, removeGoogleAuthCookie){
     await gapi.load('auth2', async () => {
@@ -39,18 +41,31 @@ export default class GapiApi {
     return true;
   }
 
-  signOut(cb){
-    gapi.load('auth2', () => {
-      let auth2 = gapi.auth2.getAuthInstance();
-      if(!auth2){
-        auth2 = gapi.auth2.init({client_id: this._clientId});
-      }
-      cb();
-      return auth2.signOut().then( () => {
-        console.log('disconnecting');
-        auth2.disconnect();
-        auth2 = null;
+  async signOut(cb){
+    let auth2;
+    cb();
+    await gapi.load('auth2', async () => {
+      auth2 = await gapi.auth2.init({client_id: this._clientId})
+      auth2.signOut().then( () => {
+        cb();
       });
+      console.log('outside disconnect');
+      auth2.disconnect();
     });
+    
+    // await gapi.load('auth2', async () => {
+    //   let auth2 = gapi.auth2.getAuthInstance();
+    //   console.log('auth2', auth2);
+    //   if(!auth2){
+    //     auth2 = await gapi.auth2.init({client_id: this._clientId});
+    //   }
+    //   cb();
+    //   auth2.signOut().then( () => {
+    //     console.log('disconnecting');
+    //     auth2.disconnect();
+    //     auth2 = null;
+    //     cb();
+    //   });
+    // });
   }
 }

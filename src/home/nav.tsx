@@ -5,6 +5,8 @@ import { setStep } from '../redux/actions';
 import { setLastSolvedClueSelector } from '../redux/selectors';
 import mountLockedModal from '../components/mountLockedWarning';
 import { useCookies } from 'react-cookie';
+import {Link } from "react-router-dom";
+
 interface NavProps {}
 
 export default function Nav() {
@@ -24,13 +26,10 @@ export default function Nav() {
     if(!isUnlocked(index)){
       mountLockedModal({});
     }
-    // else{
-    //   //history.push(`/clue${index}`);
-    // }
   }
   return (
     <nav className="nav">
-      <a href='/introduction'>Introduction</a>
+      <Link to='/introduction'>Introduction</Link>
       {
         clueIndexes.map( (num) => {
           const index = num + 1;
@@ -41,12 +40,12 @@ export default function Nav() {
           `/clue${index}` : 
           '';
          return( 
-          <a key={`clue${num}`} href={link} className='nav-link-container' onClick={e => handleClick(e, index)}>
+          <Link key={`clue${num}`} to={link} className='nav-link-container' onClick={e => handleClick(e, index)}>
            <div className="nav-icon">
               {icon}
            </div>
            Clue {index}
-          </a>
+          </Link>
         )
         }) 
       }
