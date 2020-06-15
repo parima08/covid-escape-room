@@ -10,7 +10,7 @@ export default function Clue6({
   const STEP = 6
   return (
     <section>
-      <h1 className="font-fjalla">Orientation and Induction</h1>
+      <h1 className="font-fjalla">Clue 6</h1>
       <p className="clue-text">
          You are finally here in Hakone, Japan after you got the lead
          that data about the virus cure can be obtained from this

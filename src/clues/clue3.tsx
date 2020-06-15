@@ -10,7 +10,7 @@ export default function Clue3({
   const STEP = 3
   return (
     <section>
-      <h1 className="font-fjalla">Orientation and Induction</h1>
+      <h1 className="font-fjalla">Clue 3</h1>
       <p className="clue-text">
         The Defence Lab's Project Director has kept everything ready inside the 
         time machine for you. As you eneter, you notice that below the control panel, there are 10

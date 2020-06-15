@@ -10,7 +10,7 @@ export default function Clue5({
   const STEP = 5
   return (
     <section>
-      <h1 className="font-fjalla">Orientation and Induction</h1>
+      <h1 className="font-fjalla">Clue 5</h1>
       <p className="clue-text">
         You have come thus far and now make a plan and choose where to go.
         Identify the below institues where you could find clues about

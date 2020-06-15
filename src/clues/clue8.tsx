@@ -7,7 +7,7 @@ export default function Clue8() {
   const STEP = 8;
   return (
     <section>
-      <h1 className="font-fjalla">Orientation and Induction</h1>
+      <h1 className="font-fjalla">Clue 8</h1>
       <p className="clue-text">
          After accessing vault no 12, you have finally got your hands
          on the files that have detailed findings about the virus and 

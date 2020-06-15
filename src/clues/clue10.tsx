@@ -10,7 +10,7 @@ export default function Clue10({
   const STEP = 10;
   return (
     <section>
-      <h1 className="font-fjalla">Orientation and Induction</h1>
+      <h1 className="font-fjalla">Clue 10</h1>
       <p className="clue-text">
         Eventually, reearchers understood the missing ingredient that
         were needed to be added to the drugs clinically. Once you find

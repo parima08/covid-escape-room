@@ -10,7 +10,7 @@ export default function Clue4({
   const STEP = 4
   return (
     <section>
-      <h1 className="font-fjalla">Orientation and Induction</h1>
+      <h1 className="font-fjalla">Clue 4</h1>
       <p className="clue-text">
         You enter the time machine and are on your way to
         the future. Then, you hear some voice on your reciever and
